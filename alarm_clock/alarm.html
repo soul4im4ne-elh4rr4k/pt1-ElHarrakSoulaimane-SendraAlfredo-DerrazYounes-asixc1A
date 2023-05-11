@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Project Lex</title>
+    <link rel="icon" href="../resources/icon.png">
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'><link rel="stylesheet" href="alarm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet"> 
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+    <script  src="alarm.js"></script>
+    <!--Alarm cloud css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="alarm.html" style="font-family: 'Sora', sans-serif;">Project Lex</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="alarm.html"><i class="far fa-clock"></i>Alarm Clock</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../timer/timer.html"><i class="fas fa-stopwatch"></i>Timer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../wheel_spin/wheel.html"><i class="fas fa-spinner"></i>Spin Wheel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about/about.html"><i class="far fa-address-book"></i>About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);" id="dark-mode-switch"><i class="fas fa-sun"></i>Dark Mode</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Alarm-->
+    <div class="container">
+        <div class="clock-wrap">
+        <div class="displays mode-display">24HR CLOCK</div>
+        <div class="displays ampm-display handle">AM</div>
+        <div class="clock-display">
+            <ul class="control-hrs handle">
+            <li>+</li>
+            <li>-</li>
+            </ul>
+            <div class="hrs nums">00</div><span class="nums">:</span>
+            <div class="mins nums">00</div>
+            <ul class="control-mins handle">
+            <li>+</li>
+            <li>-</li>
+            </ul>
+        </div>
+        <div class="displays alarm-display">NO ALARM SET</div>
+        </div>
+        <div class="btn-wrap">
+        <div class="alarm">SET ALARM</div>
+        <div class="mode">MODE</div>
+        </div>
+    </div>
+</body>
+</html>
